@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pati Dünyası — Kedi Rehberi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo">Pati<span>Dünyası</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#irklar">Irk Rehberi</a></li>
+          <li><a href="#bakim">Bakım İpuçları</a></li>
+          <li><a href="#bilgi">Rastgele Bilgi</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="badge">Kedi Severler İçin Rehber</span>
+        <h1>Minik Dostlarının Dünyasını Keşfet</h1>
+        <p>
+          Kedi ırklarının karakter özelliklerinden günlük bakım rutinlerine,
+          şaşırtıcı bilgilerden sağlıklı yaşam ipuçlarına kadar aradığın her şey tek yerde.
+        </p>
+        <div class="hero-actions">
+          <a href="#irklar" class="btn btn-primary">Irkları İncele</a>
+          <a href="#bilgi" class="btn btn-outline">Şaşırtıcı Bilgi Gör</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="image/hero-kedi.jpg" alt="Sevimli kedi portresi" />
+      </div>
+    </div>
+  </section>
+
+  <section id="irklar" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Kedi Irk Rehberi</h2>
+        <p>Yaşam tarzına en uygun patili dostu karakterine göre filtrele.</p>
+      </div>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Tümü</button>
+        <button class="filter-btn" data-filter="sakin">Sakin &amp; Uysal</button>
+        <button class="filter-btn" data-filter="oyuncu">Oyuncu &amp; Enerjik</button>
+      </div>
+
+      <div class="breeds-grid" id="breedsGrid">
+        <article class="breed-card" data-category="sakin">
+          <img src="image/british-shorthair.jpg" alt="British Shorthair" />
+          <div class="card-body">
+            <span class="tag tag-calm">Sakin</span>
+            <h3>British Shorthair</h3>
+            <p>Peluş tüy yapısı ve ağırbaşlı tavırlarıyla bilinir. Ev ortamına kolayca uyum sağlar, kucakta durmaktan ziyade yanında oturmayı sever.</p>
+          </div>
+        </article>
+
+        <article class="breed-card" data-category="sakin">
+          <img src="image/ragdoll.jpg" alt="Ragdoll" />
+          <div class="card-body">
+            <span class="tag tag-calm">Sakin</span>
+            <h3>Ragdoll</h3>
+            <p>Kucağa alındığında kendini tamamen gevşetmesiyle ünlüdür. Mavi gözleri, ipeksi tüyleri ve insana düşkün yapısıyla tam bir ev arkadaşıdır.</p>
+          </div>
+        </article>
+
+        <article class="breed-card" data-category="oyuncu">
+          <img src="image/bengal.jpg" alt="Bengal" />
+          <div class="card-body">
+            <span class="tag tag-playful">Oyuncu</span>
+            <h3>Bengal</h3>
+            <p>Leopar desenli kürkü ve bitmeyen enerjisiyle dikkat çeker. Zeka oyunlarına, tırmanmaya ve yüksek yerleri keşfetmeye bayılır.</p>
+          </div>
+        </article>
+
+        <article class="breed-card" data-category="oyuncu">
+          <img src="image/tekir.jpg" alt="Tekir" />
+          <div class="card-body">
+            <span class="tag tag-playful">Oyuncu</span>
+            <h3>Tekir</h3>
+            <p>Zeki, meraklı ve yüksek adaptasyon gücüne sahip klasik dostlarımızdır. Oyun saatlerini asla kaçırmaz ve sahipleriyle güçlü bağ kurar.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="bakim" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Temel Bakım İpuçları</h2>
+        <p>Kedinin uzun, sağlıklı ve mutlu bir ömür sürmesi için günlük rutinler.</p>
+      </div>
+
+      <div class="care-layout">
+        <div class="care-image-box">
+          <img src="image/bakim-tuy-beslenme.jpg" alt="Kedi bakımı ve beslenme" />
+        </div>
+
+        <div class="care-cards">
+          <div class="care-item">
+            <h3>Dengeli Beslenme &amp; Su</h3>
+            <p>Yaşına ve kısırlaştırma durumuna uygun kaliteli mama seç. Kediler durgun suyu pek sevmez; su kabını mama kabından uzağa koy.</p>
+          </div>
+          <div class="care-item">
+            <h3>Düzenli Tüy Tarama</h3>
+            <p>Kısa tüylü kedileri haftada 2, uzun tüylüleri ise her gün tarayarak tüy yumağı oluşumunu önleyebilir ve kan dolaşımını destekleyebilirsin.</p>
+          </div>
+          <div class="care-item">
+            <h3>Zihinsel &amp; Fiziksel Oyun</h3>
+            <p>Günde en az 15–20 dakika olta oyuncaklar veya lazer/top oyunlarıyla avcılık içgüdülerini tatmin et; bu stresi ciddi oranda azaltır.</p>
+          </div>
+          <div class="care-item">
+            <h3>Kum Kabı Hijyeni</h3>
+            <p>Kum kabını günde en az bir kez temizle ve evdeki kedi sayısından bir fazla kum kabı bulundurmaya özen göster.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bilgi" class="section">
+    <div class="container">
+      <div class="fact-box">
+        <span class="badge">Biliyor Muydun?</span>
+        <h2>Rastgele Kedi Bilgisi</h2>
+        <p id="factText" class="fact-text">
+          Kediler hayatlarının yaklaşık %70'ini uyuyarak geçirir; bu da 9 yaşındaki bir kedinin ortalama 6 yılını uyuduğu anlamına gelir.
+        </p>
+        <button id="newFactBtn" class="btn btn-primary">Yeni Bilgi Getir</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Pati Dünyası &copy; 2026 — Tüm patili dostlar için sevgiyle hazırlandı.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
